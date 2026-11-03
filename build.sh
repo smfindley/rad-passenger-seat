@@ -34,7 +34,7 @@ openscad -o out/bolt_pad_modifier.stl --export-format binstl bolt_pad_modifier.s
 
 ./make_3mf.py out/seat_board_half.stl out/seat_board_half.3mf \
   --title "RAD passenger seat base board - half" \
-  --desc "156.9 x 142.4 x 10.0 mm. Print twice, rotate one part 180 deg about Z to mate the dovetail seam. 6 walls, 50% gyroid, PLA."
+  --desc "159.4 x 147.4 x 10.0 mm. Print twice, rotate one part 180 deg about Z to mate the dovetail seam. 6 walls, 50% gyroid, PLA."
 
 openscad -o out/preview_half_iso.png --imgsize=1600,1200 \
   --camera=0,0,6,58,0,28,0 --viewall --projection=p \

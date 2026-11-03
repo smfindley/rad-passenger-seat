@@ -8,7 +8,7 @@
 /* [Seat footprint] */
 seat_len      = 11.5 * 25.4;   // 292.1  cushion overall length
 seat_wid      = 6.0  * 25.4;   // 152.4  cushion overall width
-side_clear    = 5.0;           // margin per side inside the cover
+side_clear    = 2.5;           // margin per side inside the cover (5 mm total)
 corner_r      = 18;            // plan-view corner radius
 edge_chamfer  = 0.8;           // chamfer on top and bottom perimeters
 

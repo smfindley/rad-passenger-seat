@@ -10,8 +10,8 @@ Two versions, same board:
 
 | Version | File | Piece size | Bed needed |
 |---|---|---|---|
-| One piece | `out/seat_board.stl` | 282.1 × 142.4 × 10 | 282 × 142 mm |
-| **Two piece** | `out/seat_board_half.stl` (print **twice**) | 156.9 × 142.4 × 10 | **220 × 220 mm** |
+| One piece | `out/seat_board.stl` | 287.1 × 147.4 × 10 | 287 × 147 mm |
+| **Two piece** | `out/seat_board_half.stl` (print **twice**) | 159.4 × 147.4 × 10 | **220 × 220 mm** |
 | Two piece, Orca | **`out/seat_board_half.3mf`** | same as above | 220 × 220 mm |
 
 ## 3MF for Orca (FlashForge Adventurer 5M)
@@ -27,7 +27,7 @@ file is tied to one Orca version and breaks quietly when presets get renamed;
 this one imports into any version of Orca, Flash Studio, Prusa or Bambu and
 stays valid. Everything version-specific lives in the settings table instead.
 
-Verified after writing: 3466 triangles, 1731 vertices, 156.90 × 142.40 × 10.00
+Verified after writing: 3698 triangles, 1847 vertices, 159.40 × 147.40 × 10.00
 mm, volume matches the STL to 0.01 cm³, zip and XML re-read cleanly.
 
 ![iso half](out/preview_half_iso.png)
@@ -56,7 +56,7 @@ whole 151 mm; a rib only acts over its own 6 mm. Modelling a T-section over one
 | Second moment of area, per bay | 2909 mm⁴ | **3398 mm⁴ (+17 %)** |
 | Section modulus, tension face | 798 mm³ | **879 mm³ (+10 %)** |
 | Overall height | 10 mm | **10 mm** |
-| Solid volume | 307.0 cm³ | **321.6 cm³** |
+| Solid volume | 323.2 cm³ | **338.7 cm³** |
 
 Same height, 17 % stiffer in bending, at the cost of 4.8 % more material. That
 is still the best trade available inside the envelope, though the gain is
@@ -97,7 +97,7 @@ and a 10 mm trap.
 | Item | Value |
 |---|---|
 | Seat length / width | 292.1 × 152.4 (11.5" × 6") |
-| Board length / width | 282.1 × 142.4 (5 mm clearance per side) |
+| Board length / width | 287.1 × 147.4 (2.5 mm clearance per side, 5 mm total) |
 | Corner radius | 18 |
 | **Plate thickness** | **7.5** |
 | **Rib / rim / pad height** | **2.5** |
@@ -110,12 +110,12 @@ and a 10 mm trap.
 | Material under each trap | 4.5 mm |
 | Seam teeth (two-piece) | 4, 16 mm deep, 18 mm root, 10° undercut |
 
-Meshes: one-piece 5440 triangles, 321.6 cm³ solid, 282.10 × 142.40 × 10.00 mm.
-Half 3466 triangles, 161.1 cm³, 156.90 × 142.40 × 10.00 mm. Both watertight
+Meshes: one-piece 5900 triangles, 338.7 cm³ solid, 287.10 × 147.40 × 10.00 mm.
+Half 3698 triangles, 169.6 cm³, 159.40 × 147.40 × 10.00 mm. Both watertight
 with outward normals; the two halves union back to the full board with no
 interference.
 
-Expect roughly **250–265 g** of filament for the one-piece, or 125–130 g per
+Expect roughly **260–275 g** of filament for the one-piece, or 130–140 g per
 half, at the settings below.
 
 ## Print settings — PLA
