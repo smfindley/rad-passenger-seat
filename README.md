@@ -10,8 +10,8 @@ Two versions, same board:
 
 | Version | File | Piece size | Bed needed |
 |---|---|---|---|
-| One piece | `out/seat_board.stl` | 291.1 × 151.4 × 10 | 292 × 152 mm |
-| **Two piece** | `out/seat_board_half.stl` (print **twice**) | 161.4 × 151.4 × 10 | **220 × 220 mm** |
+| One piece | `out/seat_board.stl` | 282.1 × 142.4 × 10 | 282 × 142 mm |
+| **Two piece** | `out/seat_board_half.stl` (print **twice**) | 156.9 × 142.4 × 10 | **220 × 220 mm** |
 | Two piece, Orca | **`out/seat_board_half.3mf`** | same as above | 220 × 220 mm |
 
 ## 3MF for Orca (FlashForge Adventurer 5M)
@@ -27,7 +27,7 @@ file is tied to one Orca version and breaks quietly when presets get renamed;
 this one imports into any version of Orca, Flash Studio, Prusa or Bambu and
 stays valid. Everything version-specific lives in the settings table instead.
 
-Verified after writing: 3742 triangles, 1869 vertices, 161.40 × 151.40 × 10.00
+Verified after writing: 3466 triangles, 1731 vertices, 156.90 × 142.40 × 10.00
 mm, volume matches the STL to 0.01 cm³, zip and XML re-read cleanly.
 
 ![iso half](out/preview_half_iso.png)
@@ -56,9 +56,9 @@ whole 151 mm; a rib only acts over its own 6 mm. Modelling a T-section over one
 | Second moment of area, per bay | 2909 mm⁴ | **3398 mm⁴ (+17 %)** |
 | Section modulus, tension face | 798 mm³ | **879 mm³ (+10 %)** |
 | Overall height | 10 mm | **10 mm** |
-| Solid volume | 339.7 cm³ | **355.3 cm³** |
+| Solid volume | 307.0 cm³ | **321.6 cm³** |
 
-Same height, 17 % stiffer in bending, at the cost of 4.6 % more material. That
+Same height, 17 % stiffer in bending, at the cost of 4.8 % more material. That
 is still the best trade available inside the envelope, though the gain is
 smaller than it was at 12 mm.
 
@@ -97,24 +97,25 @@ and a 10 mm trap.
 | Item | Value |
 |---|---|
 | Seat length / width | 292.1 × 152.4 (11.5" × 6") |
-| Board length / width | 291.1 × 151.4 (0.5 mm clearance per side) |
+| Board length / width | 282.1 × 142.4 (5 mm clearance per side) |
 | Corner radius | 18 |
 | **Plate thickness** | **7.5** |
 | **Rib / rim / pad height** | **2.5** |
 | **Overall height** | **10.0** |
 | Perimeter rim | 6 mm wide, 8 mm in from the edge |
 | Bolt pattern, eye to eye | 223 × 110, centred |
+| Bolt pads | ⌀26 |
 | Bolt holes | ⌀6.8 through (M6 clearance) |
 | Hex traps | 10.6 mm across flats, 5.5 mm deep, 0.8 mm lead-in |
 | Material under each trap | 4.5 mm |
 | Seam teeth (two-piece) | 4, 16 mm deep, 18 mm root, 10° undercut |
 
-Meshes: one-piece 5982 triangles, 355.3 cm³ solid, 291.10 × 151.40 × 10.00 mm.
-Half 3742 triangles, 177.95 cm³, 161.40 × 151.40 × 10.00 mm. Both watertight
+Meshes: one-piece 5440 triangles, 321.6 cm³ solid, 282.10 × 142.40 × 10.00 mm.
+Half 3466 triangles, 161.1 cm³, 156.90 × 142.40 × 10.00 mm. Both watertight
 with outward normals; the two halves union back to the full board with no
 interference.
 
-Expect roughly **275–290 g** of filament for the one-piece, or 140–145 g per
+Expect roughly **250–265 g** of filament for the one-piece, or 125–130 g per
 half, at the settings below.
 
 ## Print settings — PLA
@@ -140,7 +141,7 @@ carry the load, so don't scale them up for the time saved. Use dry PLA and
 direct-sun temperatures, print PETG or ASA instead.
 
 **Bolt pads.** At 6 perimeters the shoulder under every bolt head already
-prints solid, so the clamp load never crosses infill. To make the whole 34 mm
+prints solid, so the clamp load never crosses infill. To make the whole 26 mm
 pad solid as well, load `out/bolt_pad_modifier.stl` as a modifier on the 3MF and
 set its sparse infill to 100 %. If you would rather not use modifiers, set 8
 walls globally — about 10 % more material — and every pad is effectively solid.

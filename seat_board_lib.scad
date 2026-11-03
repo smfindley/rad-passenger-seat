@@ -8,7 +8,7 @@
 /* [Seat footprint] */
 seat_len      = 11.5 * 25.4;   // 292.1  cushion overall length
 seat_wid      = 6.0  * 25.4;   // 152.4  cushion overall width
-side_clear    = 0.5;           // slip-fit gap per side inside the cover
+side_clear    = 5.0;           // margin per side inside the cover
 corner_r      = 18;            // plan-view corner radius
 edge_chamfer  = 0.8;           // chamfer on top and bottom perimeters
 
@@ -30,7 +30,7 @@ thickness     = 7.5;           // plate; the remainder becomes rib depth
 
 /* [Reinforcement] */
 reinforce     = true;          // bosses + rib grid on the cushion face
-boss_d        = 34;            // pad diameter at each bolt
+boss_d        = 26;            // pad diameter at each bolt
 boss_fillet   = 2.5;           // 45 deg blend into the plate
 rib_w         = 6.0;           // rib width at the base
 rib_top_w     = 3.5;           // rib width at the top
