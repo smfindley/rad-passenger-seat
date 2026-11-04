@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="740" viewBox="0 0 1280 740">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5c6f75"/></marker></defs>
+<rect width="1280" height="740" fill="#ffffff"/><text x="40.00" y="52.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="25" text-anchor="start" fill="#17323c" font-weight="bold">SECTIONS</text><text x="40.00" y="76.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" text-anchor="start" fill="#5c6f75" font-weight="normal">height budget and bolt-station detail · all dimensions mm</text>
+<line x1="660" y1="96" x2="660" y2="700" stroke="#dde6e8" stroke-width="1.5"/>
+<text x="60.00" y="118.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" text-anchor="start" fill="#17323c" font-weight="bold">Bolt station</text>
+<text x="60.00" y="138.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" fill="#5c6f75" font-weight="normal">M6 · Ø6.8 hole · 10.6 A/F trap</text>
+<polygon points="80.00,500.00 80.00,410.00 135.20,410.00 164.00,380.00 476.00,380.00 504.80,410.00 560.00,410.00 560.00,500.00" fill="#c9e4e8" stroke="#17323c" stroke-width="2.2"/>
+<polygon points="279.20,500.00 360.80,500.00 360.80,446.00 383.60,446.00 383.60,380.00 256.40,380.00 256.40,446.00 279.20,446.00" fill="#ffffff" stroke="#17323c" stroke-width="1.8"/>
+<line x1="80.0" y1="500.0" x2="560.0" y2="500.0" stroke="#17323c" stroke-width="2.2"/>
+<line x1="80.0" y1="500.0" x2="60" y2="500.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="164.0" y1="380.0" x2="60" y2="380.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="60.00" y1="380.00" x2="60.00" y2="500.00" stroke="#5c6f75" stroke-width="1.1" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="47.00" y="440.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#5c6f75" font-weight="normal" transform="rotate(-90 47.00 440.00)">10.0</text>
+<line x1="560.0" y1="500.0" x2="586.0" y2="500.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="504.8" y1="410.0" x2="586.0" y2="410.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="586.00" y1="410.00" x2="586.00" y2="500.00" stroke="#5c6f75" stroke-width="1.1" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="598.00" y="455.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#5c6f75" font-weight="normal" transform="rotate(-90 598.00 455.00)">7.5</text>
+<line x1="320.00" y1="380.00" x2="320.00" y2="446.00" stroke="#5c6f75" stroke-width="1.1" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="332.00" y="413.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#5c6f75" font-weight="normal" transform="rotate(-90 332.00 413.00)">5.5</text>
+<line x1="256.4" y1="380.0" x2="256.4" y2="362.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="383.6" y1="380.0" x2="383.6" y2="362.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="256.40" y1="354.00" x2="383.60" y2="354.00" stroke="#5c6f75" stroke-width="1.1" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="320.00" y="345.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#5c6f75" font-weight="normal">10.6 A/F</text>
+<line x1="279.2" y1="500.0" x2="279.2" y2="516.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="360.8" y1="500.0" x2="360.8" y2="516.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="279.20" y1="530.00" x2="360.80" y2="530.00" stroke="#5c6f75" stroke-width="1.1" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="320.00" y="521.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#5c6f75" font-weight="normal">Ø6.8</text>
+<line x1="476.00" y1="380.00" x2="492.00" y2="324.00" stroke="#5c6f75" stroke-width="1"/><circle cx="476.00" cy="380.00" r="2.6" fill="#5c6f75"/>
+<text x="498.00" y="328.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" text-anchor="start" fill="#5c6f75" font-weight="normal">Ø26 pad</text>
+<text x="498.00" y="346.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" fill="#5c6f75" font-weight="normal">(30.8 at base)</text>
+<text x="700.00" y="118.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" text-anchor="start" fill="#17323c" font-weight="bold">Plate + rib</text>
+<text x="700.00" y="138.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" fill="#5c6f75" font-weight="normal">7.5 mm plate + 2.5 mm rib = 10.0 mm</text>
+<polygon points="782.00,500.00 1118.00,500.00 1118.00,410.00 986.00,410.00 971.00,380.00 929.00,380.00 914.00,410.00 782.00,410.00" fill="#c9e4e8" stroke="#17323c" stroke-width="2.2"/>
+<line x1="782.0" y1="500.0" x2="1118.0" y2="500.0" stroke="#17323c" stroke-width="2.2"/>
+<line x1="1118.0" y1="500.0" x2="1144.0" y2="500.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="986.0" y1="410.0" x2="1144.0" y2="410.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="1144.00" y1="410.00" x2="1144.00" y2="500.00" stroke="#5c6f75" stroke-width="1.1" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="1156.00" y="455.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#5c6f75" font-weight="normal" transform="rotate(-90 1156.00 455.00)">7.5</text>
+<line x1="700.00" y1="380.00" x2="700.00" y2="500.00" stroke="#5c6f75" stroke-width="1.1" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="688.00" y="440.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#5c6f75" font-weight="normal" transform="rotate(-90 688.00 440.00)">10.0</text>
+<line x1="782.0" y1="500.0" x2="700" y2="500.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="929.0" y1="380.0" x2="700" y2="380.0" stroke="#5c6f75" stroke-width=".7"/>
+<line x1="914.00" y1="534.00" x2="986.00" y2="534.00" stroke="#5c6f75" stroke-width="1.1" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="950.00" y="525.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#5c6f75" font-weight="normal">6.0 base</text>
+<line x1="929.00" y1="350.00" x2="971.00" y2="350.00" stroke="#5c6f75" stroke-width="1.1" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="950.00" y="341.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#5c6f75" font-weight="normal">3.5 top</text>
+<text x="700.00" y="694.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" fill="#5c6f75" font-weight="normal">Ribs, rim and bolt pads occupy the 2.5 mm above the plate;</text>
+<text x="700.00" y="714.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" fill="#5c6f75" font-weight="normal">plate carries the bending, so it gets the other 7.5 mm.</text>
+</svg>

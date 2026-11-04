@@ -56,6 +56,9 @@ openscad -o out/seam_profile.png --imgsize=1400,1200 -D 'show="seam"' \
   --camera=0,0,0,0,0,0,180 --projection=o \
   --colorscheme=Tomorrow seat_board_split.scad
 
+# ---- dimensioned schematics -----------------------------------------
+./make_schematic.py
+
 # ---- strip the eXIf chunk OpenSCAD stamps into every PNG -------------
 # (legal PNG, but rejected as "corrupt" by some viewers and validators)
 ./clean_png.py 'out/*.png'

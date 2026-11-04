@@ -82,7 +82,6 @@ only 2.5 mm of the height you were already spending.
 The trap resists rotation through the six flats, and the bolt head bears on the
 ring of material around the through hole. Both scale with head size:
 
-
 |                                            | **M6 (chosen)**         | M8                  |
 | ------------------------------------------ | ----------------------- | ------------------- |
 | Hex head across flats                      | **10 mm**               | 13 mm               |
@@ -90,16 +89,19 @@ ring of material around the through hole. Both scale with head size:
 | Bearing ring under the head                | **1.6 mm wide, 50 mm²** | 2.0 mm wide, 83 mm² |
 | Relative torque before the shoulder yields | **1.0×**                | 1.65×               |
 
-
 M8 is the stronger joint, but it needs a 9.0 mm through hole and the frame is
 drilled for M6. Opening the frame holes is more work and more risk than the
 extra shoulder torque is worth, so the board drops back to M6 — a 6.8 mm hole
-and a 10 mm trap.
+and a 10.6 mm trap.
 
 **Check the frame holes clear 6.8 mm before you commit.**
 
-## Default dimensions (mm)
+![bolt station section](out/preview_hole.png)
 
+*Section through a bolt station: 6.8 mm through hole, 10.6 mm hex trap, 5.5 mm
+deep, bearing on 4.5 mm of plate.*
+
+## Default dimensions (mm)
 
 | Item                       | Value                                                 |
 | -------------------------- | ----------------------------------------------------- |
@@ -117,7 +119,6 @@ and a 10 mm trap.
 | Material under each trap   | 4.5 mm                                                |
 | Seam teeth (two-piece)     | 4, 16 mm deep, 18 mm root, 10° undercut               |
 
-
 Meshes: one-piece 5900 triangles, 338.7 cm³ solid, 287.10 × 147.40 × 10.00 mm.
 Half 3698 triangles, 169.6 cm³, 159.40 × 147.40 × 10.00 mm. Both watertight
 with outward normals; the two halves union back to the full board with no
@@ -125,6 +126,17 @@ interference.
 
 Expect roughly **260–275 g** of filament for the one-piece, or 130–140 g per
 half, at the settings below.
+
+## Schematic
+
+![plan view](out/schematic_plan.svg)
+
+![sections](out/schematic_section.svg)
+
+The plan gives the outline, the 224 × 110 bolt pattern, the 26 mm pads and the
+two-piece split. The sections show the 7.5 mm plate plus 2.5 mm ribs, and the
+M6 trap detail. Both drawings are generated from the same OpenSCAD parameters,
+so they cannot drift from the model.
 
 ## Print settings — PLA
 
@@ -197,16 +209,15 @@ and glues back together.
 1. Dry-fit the halves (rotate one 180°), then separate.
 2. Clean the joint faces with IPA; a light 400 grit scuff helps.
 3. Glue. **Epoxy is stronger on PLA** and forgiving of the 0.3 mm bond line;
- medium CA gel is faster and fine because the dovetail carries the tension.
- Thin CA is too runny.
+   medium CA gel is faster and fine because the dovetail carries the tension.
+   Thin CA is too runny.
 4. Press together, clamp or wrap tape around the board, wipe the squeeze-out.
 5. Drop the four M6 bolts into the traps, lower onto the frame, and **snug to
- about 1.5–2 N·m**. The head bears on a 1.6 mm plastic shoulder, so the
- plastic, not the bolt, sets the limit — the M6 shoulder is smaller than the
- old M8 one and crushes at lower torque. Threadlocker beats more torque.
+   about 1.5–2 N·m**. The head bears on a 1.6 mm plastic shoulder, so the
+   plastic, not the bolt, sets the limit — the M6 shoulder is smaller than the
+   old M8 one and crushes at lower torque. Threadlocker beats more torque.
 
 ## Files
-
 
 | File                        | What it is                                                        |
 | --------------------------- | ----------------------------------------------------------------- |
@@ -214,11 +225,14 @@ and glues back together.
 | `out/seat_board_half.stl`   | Half — print twice, rotate one 180°                               |
 | `out/seat_board_half.3mf`   | Half as a 3MF, centred for a 220 mm bed                           |
 | `out/bolt_pad_modifier.stl` | 100 %-infill modifier for the two pads on a half                  |
+| `out/schematic_plan.svg`    | Dimensioned plan view                                             |
+| `out/schematic_section.svg` | Bolt-station and height sections                                  |
 | `seat_board_lib.scad`       | Shared geometry and parameters                                    |
 | `seat_board.scad`           | One-piece wrapper                                                 |
 | `seat_board_split.scad`     | Two-piece wrapper + seam (`show = half / pair / exploded / seam`) |
 | `bolt_pad_modifier.scad`    | Source for the modifier volume                                    |
 | `make_3mf.py`               | STL → validated 3MF converter                                     |
+| `make_schematic.py`         | Generates the dimensioned SVG schematics                          |
 | `check_stl.py`              | Watertight / volume / bbox check                                  |
 | `clean_png.py`              | Strips the `eXIf` chunk OpenSCAD adds to every render             |
 | `check_pair.scad`           | Interference test between the two halves                          |

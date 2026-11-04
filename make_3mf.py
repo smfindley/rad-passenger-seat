@@ -135,9 +135,13 @@ def main(argv):
     xml = model_xml(title, desc, os.path.splitext(os.path.basename(src))[0], verts, faces)
 
     with zipfile.ZipFile(dst, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
-        z.writestr("[Content_Types].xml", CONTENT_TYPES)
-        z.writestr("_rels/.rels", RELS)
-        z.writestr("3D/3dmodel.model", xml)
+        # fixed timestamps keep rebuilds byte-identical
+        for name, data in (("[Content_Types].xml", CONTENT_TYPES),
+                           ("_rels/.rels", RELS),
+                           ("3D/3dmodel.model", xml)):
+            info = zipfile.ZipInfo(name, date_time=(2020, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            z.writestr(info, data, compresslevel=9)
 
     # ---- validate what actually landed on disk -----------------------
     import xml.etree.ElementTree as ET
