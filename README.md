@@ -8,11 +8,13 @@ Designed for a child's weight plus riding loads, printed in PLA at high infill.
 
 Two versions, same board:
 
-| Version | File | Piece size | Bed needed |
-|---|---|---|---|
-| One piece | `out/seat_board.stl` | 287.1 × 147.4 × 10 | 287 × 147 mm |
-| **Two piece** | `out/seat_board_half.stl` (print **twice**) | 159.4 × 147.4 × 10 | **220 × 220 mm** |
-| Two piece, Orca | **`out/seat_board_half.3mf`** | same as above | 220 × 220 mm |
+
+| Version         | File                                        | Piece size         | Bed needed       |
+| --------------- | ------------------------------------------- | ------------------ | ---------------- |
+| One piece       | `out/seat_board.stl`                        | 287.1 × 147.4 × 10 | 287 × 147 mm     |
+| **Two piece**   | `out/seat_board_half.stl` (print **twice**) | 159.4 × 147.4 × 10 | **220 × 220 mm** |
+| Two piece, Orca | **`out/seat_board_half.3mf`**               | same as above      | 220 × 220 mm     |
+
 
 ## 3MF for Orca (FlashForge Adventurer 5M)
 
@@ -51,12 +53,14 @@ goes with the cube of plate thickness, and the plate is continuous over the
 whole 151 mm; a rib only acts over its own 6 mm. Modelling a T-section over one
 86 mm rib bay:
 
-| | 7 mm plate + 3 mm ribs | **7.5 mm plate + 2.5 mm ribs** |
-|---|---|---|
-| Second moment of area, per bay | 2909 mm⁴ | **3398 mm⁴ (+17 %)** |
-| Section modulus, tension face | 798 mm³ | **879 mm³ (+10 %)** |
-| Overall height | 10 mm | **10 mm** |
-| Solid volume | 323.2 cm³ | **338.7 cm³** |
+
+|                                | 7 mm plate + 3 mm ribs | **7.5 mm plate + 2.5 mm ribs** |
+| ------------------------------ | ---------------------- | ------------------------------ |
+| Second moment of area, per bay | 2909 mm⁴               | **3398 mm⁴ (+17 %)**           |
+| Section modulus, tension face  | 798 mm³                | **879 mm³ (+10 %)**            |
+| Overall height                 | 10 mm                  | **10 mm**                      |
+| Solid volume                   | 323.2 cm³              | **338.7 cm³**                  |
+
 
 Same height, 17 % stiffer in bending, at the cost of 4.8 % more material. That
 is still the best trade available inside the envelope, though the gain is
@@ -78,12 +82,14 @@ only 2.5 mm of the height you were already spending.
 The trap resists rotation through the six flats, and the bolt head bears on the
 ring of material around the through hole. Both scale with head size:
 
-| | **M6 (chosen)** | M8 |
-|---|---|---|
-| Hex head across flats | **10 mm** | 13 mm |
-| Through hole | **6.8 mm** | 9.0 mm |
-| Bearing ring under the head | **1.6 mm wide, 50 mm²** | 2.0 mm wide, 83 mm² |
-| Relative torque before the shoulder yields | **1.0×** | 1.65× |
+
+|                                            | **M6 (chosen)**         | M8                  |
+| ------------------------------------------ | ----------------------- | ------------------- |
+| Hex head across flats                      | **10 mm**               | 13 mm               |
+| Through hole                               | **6.8 mm**              | 9.0 mm              |
+| Bearing ring under the head                | **1.6 mm wide, 50 mm²** | 2.0 mm wide, 83 mm² |
+| Relative torque before the shoulder yields | **1.0×**                | 1.65×               |
+
 
 M8 is the stronger joint, but it needs a 9.0 mm through hole and the frame is
 drilled for M6. Opening the frame holes is more work and more risk than the
@@ -94,21 +100,23 @@ and a 10 mm trap.
 
 ## Default dimensions (mm)
 
-| Item | Value |
-|---|---|
-| Seat length / width | 292.1 × 152.4 (11.5" × 6") |
-| Board length / width | 287.1 × 147.4 (2.5 mm clearance per side, 5 mm total) |
-| Corner radius | 18 |
-| **Plate thickness** | **7.5** |
-| **Rib / rim / pad height** | **2.5** |
-| **Overall height** | **10.0** |
-| Perimeter rim | 6 mm wide, 8 mm in from the edge |
-| Bolt pattern, eye to eye | 223 × 110, centred |
-| Bolt pads | ⌀26 |
-| Bolt holes | ⌀6.8 through (M6 clearance) |
-| Hex traps | 10.6 mm across flats, 5.5 mm deep, 0.8 mm lead-in |
-| Material under each trap | 4.5 mm |
-| Seam teeth (two-piece) | 4, 16 mm deep, 18 mm root, 10° undercut |
+
+| Item                       | Value                                                 |
+| -------------------------- | ----------------------------------------------------- |
+| Seat length / width        | 292.1 × 152.4 (11.5" × 6")                            |
+| Board length / width       | 287.1 × 147.4 (2.5 mm clearance per side, 5 mm total) |
+| Corner radius              | 18                                                    |
+| **Plate thickness**        | **7.5**                                               |
+| **Rib / rim / pad height** | **2.5**                                               |
+| **Overall height**         | **10.0**                                              |
+| Perimeter rim              | 6 mm wide, 8 mm in from the edge                      |
+| Bolt pattern, eye to eye   | 224 × 110, centred                                    |
+| Bolt pads                  | ⌀26                                                   |
+| Bolt holes                 | ⌀6.8 through (M6 clearance)                           |
+| Hex traps                  | 10.6 mm across flats, 5.5 mm deep, 0.8 mm lead-in     |
+| Material under each trap   | 4.5 mm                                                |
+| Seam teeth (two-piece)     | 4, 16 mm deep, 18 mm root, 10° undercut               |
+
 
 Meshes: one-piece 5900 triangles, 338.7 cm³ solid, 287.10 × 147.40 × 10.00 mm.
 Half 3698 triangles, 169.6 cm³, 159.40 × 147.40 × 10.00 mm. Both watertight
@@ -123,17 +131,19 @@ half, at the settings below.
 Print **flat, traps and ribs facing up**. No supports, no raft. The layer plane
 stays parallel to the board, which is the strong direction for FDM.
 
-| Setting | Value |
-|---|---|
-| Nozzle | 0.4 mm |
-| Layer height | 0.2 mm (first layer 0.25) |
-| Perimeters | **6** — this is the load path |
-| Top / bottom solid layers | 5 / 5 |
-| Infill | 50 % gyroid |
-| Nozzle / bed | 215–220 °C / 60 °C |
-| Speed | 40 outer wall, 60 inner wall, 80 infill mm/s |
-| Brim | 5 mm |
-| Supports / ironing | off |
+
+| Setting                   | Value                                        |
+| ------------------------- | -------------------------------------------- |
+| Nozzle                    | 0.4 mm                                       |
+| Layer height              | 0.2 mm (first layer 0.25)                    |
+| Perimeters                | **6** — this is the load path                |
+| Top / bottom solid layers | 5 / 5                                        |
+| Infill                    | 50 % gyroid                                  |
+| Nozzle / bed              | 215–220 °C / 60 °C                           |
+| Speed                     | 40 outer wall, 60 inner wall, 80 infill mm/s |
+| Brim                      | 5 mm                                         |
+| Supports / ironing        | off                                          |
+
 
 Those speeds are deliberately conservative — layer adhesion and wall quality
 carry the load, so don't scale them up for the time saved. Use dry PLA and
@@ -187,33 +197,35 @@ and glues back together.
 1. Dry-fit the halves (rotate one 180°), then separate.
 2. Clean the joint faces with IPA; a light 400 grit scuff helps.
 3. Glue. **Epoxy is stronger on PLA** and forgiving of the 0.3 mm bond line;
-   medium CA gel is faster and fine because the dovetail carries the tension.
-   Thin CA is too runny.
+ medium CA gel is faster and fine because the dovetail carries the tension.
+ Thin CA is too runny.
 4. Press together, clamp or wrap tape around the board, wipe the squeeze-out.
 5. Drop the four M6 bolts into the traps, lower onto the frame, and **snug to
-   about 1.5–2 N·m**. The head bears on a 1.6 mm plastic shoulder, so the
-   plastic, not the bolt, sets the limit — the M6 shoulder is smaller than the
-   old M8 one and crushes at lower torque. Threadlocker beats more torque.
+ about 1.5–2 N·m**. The head bears on a 1.6 mm plastic shoulder, so the
+ plastic, not the bolt, sets the limit — the M6 shoulder is smaller than the
+ old M8 one and crushes at lower torque. Threadlocker beats more torque.
 
 ## Files
 
-| File | What it is |
-|---|---|
-| `out/seat_board.stl` | One-piece print mesh |
-| `out/seat_board_half.stl` | Half — print twice, rotate one 180° |
-| `out/seat_board_half.3mf` | Half as a 3MF, centred for a 220 mm bed |
-| `out/bolt_pad_modifier.stl` | 100 %-infill modifier for the two pads on a half |
-| `seat_board_lib.scad` | Shared geometry and parameters |
-| `seat_board.scad` | One-piece wrapper |
-| `seat_board_split.scad` | Two-piece wrapper + seam (`show = half / pair / exploded / seam`) |
-| `bolt_pad_modifier.scad` | Source for the modifier volume |
-| `make_3mf.py` | STL → validated 3MF converter |
-| `check_stl.py` | Watertight / volume / bbox check |
-| `clean_png.py` | Strips the `eXIf` chunk OpenSCAD adds to every render |
-| `check_pair.scad` | Interference test between the two halves |
-| `slice_check.scad` | Plan-slice debug view of the rib grid |
-| `preview_hole.scad` | Section through a bolt station |
-| `build.sh` | Regenerate everything |
+
+| File                        | What it is                                                        |
+| --------------------------- | ----------------------------------------------------------------- |
+| `out/seat_board.stl`        | One-piece print mesh                                              |
+| `out/seat_board_half.stl`   | Half — print twice, rotate one 180°                               |
+| `out/seat_board_half.3mf`   | Half as a 3MF, centred for a 220 mm bed                           |
+| `out/bolt_pad_modifier.stl` | 100 %-infill modifier for the two pads on a half                  |
+| `seat_board_lib.scad`       | Shared geometry and parameters                                    |
+| `seat_board.scad`           | One-piece wrapper                                                 |
+| `seat_board_split.scad`     | Two-piece wrapper + seam (`show = half / pair / exploded / seam`) |
+| `bolt_pad_modifier.scad`    | Source for the modifier volume                                    |
+| `make_3mf.py`               | STL → validated 3MF converter                                     |
+| `check_stl.py`              | Watertight / volume / bbox check                                  |
+| `clean_png.py`              | Strips the `eXIf` chunk OpenSCAD adds to every render             |
+| `check_pair.scad`           | Interference test between the two halves                          |
+| `slice_check.scad`          | Plan-slice debug view of the rib grid                             |
+| `preview_hole.scad`         | Section through a bolt station                                    |
+| `build.sh`                  | Regenerate everything                                             |
+
 
 ## Changing the model
 
@@ -229,12 +241,18 @@ seam_teeth   =  4;    // must stay even for identical halves
 Rebuild with `./build.sh` (needs OpenSCAD and Python 3 on your PATH; the
 helper scripts use only the standard library).
 
+## The Seat
+
+Link: [https://www.amazon.com/dp/B0H3ZZJ7GN](https://www.amazon.com/dp/B0H3ZZJ7GN)
+
+Rough Dimensions (LxWxH): 11.5"x6"x2"
+
 ## Still worth confirming
 
 - Frame holes clear M6 (6.8 mm).
 - Actual cushion corner radius — 18 mm is a guess.
 - Cover internal height: 10 mm is the design point; drop to `total_height = 8.5`
-  if it is tight.
+if it is tight.
 
 ## License
 

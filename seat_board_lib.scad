@@ -13,7 +13,7 @@ corner_r      = 18;            // plan-view corner radius
 edge_chamfer  = 0.8;           // chamfer on top and bottom perimeters
 
 /* [Bolt pattern - centred] */
-pitch_x       = 223;           // eye-to-eye, along length
+pitch_x       = 224;           // eye-to-eye, along length
 pitch_y       = 110;           // eye-to-eye, across width
 bolt_hole_d   = 6.8;           // M6 clearance
 hex_af        = 10.0;          // M6 hex head across flats
